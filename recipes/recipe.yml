@@ -7,7 +7,7 @@ description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/secureblue/silverblue-nvidia-open-hardened
-image-version: latest # latest is also supported if you want new updates ASAP
+image-version: 43 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -21,11 +21,11 @@ modules:
     repos:
       copr:
         - name: atim/starship
-          chroot: fedora-%OS_VERSION%-x86_64
+          chroot: fedora-43-x86_64
         - name: avengemedia/dms-git
-          chroot: fedora-%OS_VERSION%-x86_64
+          chroot: fedora-43-x86_64
         - name: avengemedia/danklinux
-          chroot: fedora-%OS_VERSION%-x86_64
+          chroot: fedora-43-x86_64
     install:
       packages:
         - starship

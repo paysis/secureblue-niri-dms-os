@@ -20,7 +20,8 @@ modules:
   - type: dnf
     repos:
       copr:
-        - atim/starship
+        - name: atim/starship
+          chroot: fedora-%OS_VERSION%-x86_64
         - name: avengemedia/dms-git
           chroot: fedora-%OS_VERSION%-x86_64
         - name: avengemedia/danklinux

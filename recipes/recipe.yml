@@ -21,8 +21,10 @@ modules:
     repos:
       copr:
         - atim/starship
-        - avengemedia/dms-git
-        - avengemedia/danklinux
+        - name: avengemedia/dms-git
+          chroot: fedora-%OS_VERSION%-x86_64
+        - name: avengemedia/danklinux
+          chroot: fedora-%OS_VERSION%-x86_64
     install:
       packages:
         - starship

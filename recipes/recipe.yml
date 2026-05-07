@@ -29,7 +29,7 @@ modules:
     install:
       packages:
         - starship
-        - nushell
+        - nu
         - niri
         - dms
         - dms-greeter

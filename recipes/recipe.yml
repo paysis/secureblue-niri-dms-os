@@ -37,6 +37,7 @@ modules:
         - dgop
         - dsearch
         - alacritty
+        - chezmoi
   - type: systemd
     system:
       enabled:
